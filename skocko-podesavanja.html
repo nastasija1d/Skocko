@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>podesavanja</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body title="podesavanja">
+    <script src="js/podesavanja.js"></script>
+    <header>
+        <h1>Скочко</h1>
+        </header>
+  <div class="wrapper">
+            <h2>Подешавања</h2>
+            <div class="field">
+                <div class="wrapper">
+                    <div id="guesses">
+                        <div class="guess">
+                          <div id="socket1" class="socket"></div>
+                          <div id="socket2" class="socket"></div>
+                          <div id="socket3" class="socket"></div>
+                          <div id="socket4" class="socket"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapperp2">
+                    <div id="guessesp2">
+                        <div class="guessp2">
+                          <div id="socketp21" class="socketp2"></div>
+                          <div id="socketp22" class="socketp2"></div>
+                          <div id="socketp23" class="socketp2"></div>
+                          <div id="socketp24" class="socketp2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<div class="colors">
+        <div id="options" class="container">
+            <button value="1" id="green" class="option green" onClick="insert(this)"></button>
+            <button value="2" id="purple" class="option purple" onClick="insert(this)"></button>
+            <button value="3" id="red" class="option red" onClick="insert(this)"></button>
+            <button value="4" id="yellow" class="option yellow" onClick="insert(this)" ></button>
+            <button value="5" id="blue" class="option blue" onClick="insert(this)"></button>
+            <button value="6" id="brown" class="option brown" onClick="insert(this)"></button>
+            <button id="delete" class="" onClick="deleteLast()">&#8672;</button>
+          </div>
+          
+
+          <div id="options" class="container">
+            <button value="7" id="green" class="option green" onClick="insertp2(this)"></button>
+            <button value="8" id="purple" class="option purple" onClick="insertp2(this)"></button>
+            <button value="9" id="red" class="option red" onClick="insertp2(this)"></button>
+            <button value="10" id="yellow" class="option yellow" onClick="insertp2(this)" ></button>
+            <button value="11" id="blue" class="option blue" onClick="insertp2(this)"></button>
+            <button value="12" id="brown" class="option brown" onClick="insertp2(this)"></button>
+            <button id="delete" class="" onClick="deleteLastp2()">&#8672;</button>
+          </div>
+          </div>
+    </div>
+<div class="buttonS">
+    <div class="button" onclick="save()">
+        <a>Сачувај</a>
+    </div>
+	
+    <div class="button" onClick="check()">
+        <a id="buttonStart" href="skocko-igra.html">Покрени</a>
+    </div>
+</div>
+</body>
+</html>

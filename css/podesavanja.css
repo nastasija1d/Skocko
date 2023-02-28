@@ -1,0 +1,234 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background-color: rgb(247, 247, 211);
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    height: 10vh;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+}
+
+header h1{
+    padding-top: 25px;
+    padding-left: 10%;
+}
+
+main{
+    margin-top: 10%;
+}
+
+main .explanationText{
+    margin: 0 auto;
+    width: 100%;
+}
+main h2{
+    margin: 60px 0;
+    width: 60%;
+    
+}
+main p{
+    font-size: 14pt;
+    text-align: justify;
+}
+
+html,
+ button,
+ input,
+ select,
+ textarea {
+  color: #222;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+.field{
+  display: flex;
+}
+
+body.won { background-color: #8FBE00; }
+body.lost { background-color: #E22D2D; }
+
+
+body.wonp2 { background-color: #8FBE00; }
+body.lostp2 { background-color: #E22D2D; }
+
+
+h1 {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.7em;
+}
+
+.wrapper {
+  display: block;
+  width: 810px;
+  margin: 0 auto;
+}
+
+.wrapperp2 {
+  display: block;
+  width: 810px;
+  margin: 0 auto;
+}
+
+
+header {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+hr {
+  border-top: 2px dotted #fff;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  margin-left: 17%;
+}
+
+.containerp2 {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  margin-left: 17%;
+}
+
+.textual {
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.textualp2 {
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.option,
+.socket {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #C7BF8D;
+}
+.optionp2,
+.socketp2 {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #C7BF8D;
+}
+.socketp2 {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #C7BF8D;
+}
+
+#guesses {
+  display: inline-block;
+  background-color: #E3DCB5;
+  border-radius: 3px 0 0 3px;
+  padding: 15px 30px;
+  font-size: 0;
+}
+
+.guess { margin-top: 15px; }
+
+.option,
+.code .socket,
+.guess .socket {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.code .socket + .socket,
+.guess .socket + .socket { margin-left: 10px; }
+
+.code {
+  border-bottom: 2px solid #c7bf8d;
+  padding-bottom: 15px;
+}
+
+.secret {
+  color: #e3dcb5;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.socket.peg {
+  -webkit-animation: bounceIn .4s;
+  -o-animation: bounceIn .4s;
+  animation: bounceIn .4s;
+}
+
+
+
+
+#guessesp2 {
+  display: inline-block;
+  background-color: #E3DCB5;
+  border-radius: 3px 0 0 3px;
+  padding: 15px 30px;
+  font-size: 0;
+}
+
+.guessp2 { margin-top: 15px; }
+
+.optionp2,
+.codep2 .socketp2,
+.guessp2 .socketp2 {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.codep2 .socketp2 + .socketp2,
+.guessp2 .socketp2 + .socketp2 { margin-left: 10px; }
+
+.codep2 {
+  border-bottom: 2px solid #c7bf8d;
+  padding-bottom: 15px;
+}
+
+.secretp2 {
+  color: #e3dcb5;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.socketp2.pegp2 {
+  -webkit-animation: bounceIn .4s;
+  -o-animation: bounceIn .4s;
+  animation: bounceIn .4s;
+}
+

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>skocko</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,800,800italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body title="igra">
+  <header>
+    <h1>Скочко</h1>
+    <button id="newGame" class="green">Покрени поново</button>
+    <a href="skocko-podesavanja.html">Подешавања</a>
+  </header>
+<div class="field">
+  <div class="wrapper">
+
+    
+    <div class="container">
+      <div id="guesses">
+        <div class="code row">
+          <div class="secret socket">?</div>
+          <div class="secret socket">?</div>
+          <div class="secret socket">?</div>
+          <div class="secret socket">?</div>
+        </div>
+        <div class="guess">
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+        </div>
+        <div class="guess">
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+        </div>
+        <div class="guess">
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+        </div>
+        <div class="guess">
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+        </div>
+        <div class="guess">
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+        </div>
+        <div class="guess">
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+        </div>
+        <div class="guess">
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+          <div class="socket"></div>
+        </div>
+      </div>
+
+      <div id="hints">
+        <div class="hint">
+          <div class="row">
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+          </div>
+        </div>
+        <div class="hint">
+          <div class="row">
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+          </div>
+        </div>
+        <div class="hint">
+          <div class="row">
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+          </div>
+        </div>
+        <div class="hint">
+          <div class="row">
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+          </div>
+        </div>
+        <div class="hint">
+          <div class="row">
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+          </div>
+        </div>
+        <div class="hint">
+          <div class="row">
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+          </div>
+        </div>
+        <div class="hint">
+          <div class="row">
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+          
+            <div class="js-hint-socket socket"></div>
+            <div class="js-hint-socket socket"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="instructions">
+      <h3>How to play</h3>
+      <p><strong>Goal:</strong> Guess the pattern, in both order and color</p>
+      <p>Insert your guess sequence into the empty sockets</p>
+      <p>Feedback is provided on the right side in the form of black and white pegs.
+        <ul>
+          <li>Black peg corresponds to one peg from your color sequence that is both the right color and in the right position</li>
+          <li>White peg corresponds to one peg from your color sequence that is the right color but NOT in the right position</li>
+        </ul>
+      </p>
+    </div>
+    
+    <div id="options" class="container">
+      <button value="1" id="green" class="option green"></button>
+      <button value="2" id="purple" class="option purple"></button>
+      <button value="3" id="red" class="option red"></button>
+      <button value="4" id="yellow" class="option yellow"></button>
+      <button value="5" id="blue" class="option blue"></button>
+      <button value="6" id="brown" class="option brown"></button>
+      <button id="delete" class="">&#8672;</button>
+    </div>
+    <div class="timer">
+      <p id="countdown">60</p>
+    </div>
+  </div>
+
+  <div class="wrapperp2">
+    <div class="containerp2">
+      <div id="guessesp2">
+        <div class="codep2 rowp2">
+          <div class="secretp2 socketp2">?</div>
+          <div class="secretp2 socketp2">?</div>
+          <div class="secretp2 socketp2">?</div>
+          <div class="secretp2 socketp2">?</div>
+        </div>
+        <div class="guessp2">
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+        </div>
+        <div class="guessp2">
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+        </div>
+        <div class="guessp2">
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+        </div>
+        <div class="guessp2">
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+        </div>
+        <div class="guessp2">
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+        </div>
+        <div class="guessp2">
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+        </div>
+        <div class="guessp2">
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+          <div class="socketp2"></div>
+        </div>
+      </div>
+
+      <div id="hintsp2">
+        <div class="hintp2">
+          <div class="rowp2">
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+          </div>
+        </div>
+        <div class="hintp2">
+          <div class="rowp2">
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+          </div>
+        </div>
+        <div class="hintp2">
+          <div class="rowp2">
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+          </div>
+        </div>
+        <div class="hintp2">
+          <div class="rowp2">
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+          </div>
+        </div>
+        <div class="hintp2">
+          <div class="rowp2">
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+          </div>
+        </div>
+        <div class="hintp2">
+          <div class="rowp2">
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+          </div>
+        </div>
+        <div class="hintp2">
+          <div class="rowp2">
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+          
+            <div class="js-hint-socketp2 socketp2"></div>
+            <div class="js-hint-socketp2 socketp2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="instructions">
+    </div>
+    
+    <div id="optionsp2" class="containerp2">
+      <button value="7" id="greenp2" class="optionp2 greenp2"></button>
+      <button value="8" id="purplep2" class="optionp2 purplep2"></button>
+      <button value="9" id="redp2" class="optionp2 redp2"></button>
+      <button value="10" id="yellowp2" class="optionp2 yellowp2"></button>
+      <button value="11" id="bluep2" class="optionp2 bluep2"></button>
+      <button value="12" id="brownp2" class="optionp2 brownp2"></button>
+      <button id="deletep2" class="">&#8672;</button>
+    </div>
+    <div class="timerp2">
+      <p id="countdownp2">60</p>
+    </div>
+  </div>
+</div>
+  <div id="modalOverlay">
+    <div id="modalMessage">
+      <button class="large">U redu</button>
+      <button class="large primary">Pokreni ponovo</button>
+    </div>
+  </div>
+
+  <div id="modalOverlayp2">
+    <div id="modalMessagep2">
+      <button class="large">U redu</button>
+      <button class="large primary">Pokreni ponovo</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
